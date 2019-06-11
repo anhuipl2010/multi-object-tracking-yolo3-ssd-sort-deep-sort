@@ -11,7 +11,9 @@ import numpy as np
 import tensorflow as tf
 from SSD_tf.nets import ssd_vgg_300, np_methods
 from SSD_tf.preprocessing import ssd_vgg_preprocessing
+
 slim = tf.contrib.slim
+
 
 # added 20180516#####
 def num2class(n):
@@ -103,7 +105,7 @@ def plt_bboxes(img, classes, scores, bboxes, figsize=(10, 10), linewidth=1.5):
 			score = scores[i]
 			if cls_id not in colors:
 				colors[cls_id] = (random.random(), random.random(), random.random())
-				# 对应目标类别的颜色随机选取
+			# 对应目标类别的颜色随机选取
 			ymin = int(bboxes[i, 0] * height)  # 一帧中对应目标的矩形框参数
 			xmin = int(bboxes[i, 1] * width)
 			ymax = int(bboxes[i, 2] * height)
@@ -120,7 +122,8 @@ class SSD(object):
 		self.config = tf.ConfigProto(log_device_placement=False, gpu_options=self.gpu_options)
 		self.isess = tf.InteractiveSession(config=self.config)
 
-		self.ckpt_filename = '../SSD_tf/model_data/ssd_300_vgg.ckpt'
+		# self.ckpt_filename = '../SSD_tf/model_data/ssd_300_vgg.ckpt'
+		self.ckpt_filename = "../SSD_tf/model_data/VGG_VOC0712_SSD_300x300_ft_iter_120000.ckpt"
 		self.net_shape = (300, 300)
 		self.data_format = 'NHWC'
 		self.img_input = tf.placeholder(tf.uint8, shape=(None, None, 3))

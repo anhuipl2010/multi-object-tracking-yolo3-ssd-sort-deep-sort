@@ -141,4 +141,4 @@ if __name__ == "__main__":
 	detect_file = "../MOT16/video/train/MOT16-11.mp4"
 	detected_results_save_path = "../results/"
 	# detection_mode="SSD"/"YOLO3"/"CENTERNET"
-	detect_and_track(detect_file, detected_results_save_path, detection_mode="YOLO3")
+	detect_and_track(detect_file, detected_results_save_path, detection_mode="SSD")
