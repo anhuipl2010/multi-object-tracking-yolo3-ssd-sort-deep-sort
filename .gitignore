@@ -1,0 +1,11 @@
+.idea
+deep_sort/model_data
+MOT16/test
+MOT16/train
+MOT16/video
+results/detection.txt
+results/output.mp4
+SSD_tf/model_data
+yolo3_centernet_tf/model_data
+yolo3_tf/model_data/yolo.h5
+yolo3_tf/yolov3.weights
