@@ -16,7 +16,7 @@ The modification of this repository is based on the following repositories:
 
 [deep_sort](https://github.com/nwojke/deep_sort)
 
-[deep_sort_yolov3](ht  tps://github.com/zgcr/deep_sort_yolov3)
+[deep_sort_yolov3](https://github.com/zgcr/deep_sort_yolov3)
 
 [centernet_tensorflow_wilderface_voc](https://github.com/xggIoU/centernet_tensorflow_wilderface_voc)
 
